@@ -1,6 +1,7 @@
 'use strict';
 
 const Hapi = require('hapi');
+const allRoutes = require('./routes');
 
 const server = Hapi.server({
     port: 5500,
@@ -9,24 +10,6 @@ const server = Hapi.server({
         cors: true
     }
 });
-const allRoutes=[
-    {
-        method: 'GET',
-        path: '/',
-        handler: (request, h) => {
-
-            return 'Hello, world!';
-        }
-    },
-    {
-        method: 'GET',
-        path: '/test',
-        handler: (request, h) => {
-
-            return { page: "test", message:'Hello, world!'};
-        }
-    }
-];
 
 server.route(allRoutes);
 

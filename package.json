@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node server.js",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "robindersingh1986@gmail.com",
   "license": "ISC",
   "dependencies": {
     "hapi": "^17.5.1",
-    "lodash": "^4.17.10"
+    "lodash": "^4.17.10",
+    "nodemon": "^1.17.5"
   }
 }
