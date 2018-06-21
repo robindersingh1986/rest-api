@@ -2,6 +2,7 @@
 
 const Hapi = require('hapi');
 const allRoutes = require('./routes');
+//require('./sequelize.js');
 
 const server = Hapi.server({
     port: 5500,
